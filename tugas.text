@@ -1,0 +1,19 @@
+tabel teachers
+id          name            nip         last_education
+t01         pak budi        12345       S1
+t02         bu siti         67890       null
+
+tabel subjects
+id          name
+s01         matematika
+s02         bahasa indonesia
+
+tabel assesments
+id    teacher_id    subject_id    name                type          minimum_score    token      start_date     end_date
+a01   t01           s01           ulangan harian      Formatif      75               mtk123     2026-10-10     2026-10-11
+
+tabel questions
+id    assesment_id    type                 question_content      answer_options       word_answer    essay_answer           explanation_of_the_answer
+q01   a01             PG                   1+1 berapa?           ["1", "2", "3"]      null           null                   ya 2 lah
+q02   a01             Jawaban Singkat      ibukota jabar?        null                 bandung        null                   null
+q03   a01             Essay                ceritain sejarah!     null                 null           sejarah adalah...      null
